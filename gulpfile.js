@@ -123,7 +123,7 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
-    "source/img/**/*.svg",
+    "source/img/**/*.svg",//нужно как то убрать папку  forsprite из копирования
     "source/img/icons/*.xml",
     "source/img/icons/*.webmanifest",
     "!source/img/icons/*.svg"

@@ -9,7 +9,81 @@
     <title> Maroon</title>
   </head>
   <body class="body">
-    <p> This is a new project of Black Software company</p>
-    <a href="#"> how to desapere complitly? </a>
+   <header class="header">
+     <a href="#">
+       <!--
+       <img class="logo" width="131" height="21" alt="логотип" src="img/sprite.svg#maroon">
+       -->
+       <svg class="logo"><use xlink:href="img/sprite.svg#maroon"></use> </svg>
+      </a>
+     <nav class="main-nav main-nav--closed main-nav--nojs">  <!-- если будем делать работу при неподключенном js -->
+      <div class="main-nav__toogle">
+        <span class="visually-hidden"> Открыть меню </span>
+      </div>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#"> Каталог </a>
+          </li>
+          <li class=" main-nav__item">
+            <a class="main-nav__link" href="#"> О нас </a>
+          </li>
+          <li class=" main-nav__item">
+            <a class="main-nav__link" href="#"> Контакты </a>
+          </li>
+        </ul>
+        <div class="social">
+          <a class="social__link" href="https://www.facebook.com" target="blank">
+            <svg class="social__link social__link--facebook"><use xlink:href="img/sprite.svg#facebook"></use> </svg>
+          </a>
+          <a class="social__link" href="https://www.instagram.com" target="blank">
+            <svg class="social__link social__link--instagram"><use xlink:href="img/sprite.svg#instagram"></use> </svg>
+          </a>
+          <a class="social__link" href="https://www.twitter.com" target="blank">
+            <svg class="social__link social__link--twitter"><use xlink:href="img/sprite.svg#twitter"></use> </svg>
+          </a>
+        </div>
+        <div class="main-nav__private">
+          <a href="#" class="main-nav__private-link">
+            <svg class="main-nav__account"><use xlink:href="img/sprite.svg#account"></use> </svg>
+          </a>
+          <a href="#" class="main-nav__private-link">
+            <svg class="main-nav__basket"><use xlink:href="img/sprite.svg#basket"></use> </svg>
+          </a>
+        </div>
+      </div>
+     </nav>
+   </header>
+   <main class="page_main">
+    <h1 class="visually-hidden">Интернет магазин косметики</h1>
+    <section class="main_division">
+      <div class="offer">
+        <div class="slogan">
+        <h2><svg class="logo"><use xlink:href="img/sprite.svg#maroon"></use> </svg></h2>
+        <h3>Натуральная косметика<br> для бережного ухода за кожей</h3>
+        <a class="button" href="#" >Подробнее</a>
+      </div>
+      <div class="cosmetic-kinds">
+        <div class="cosmetic-kinds__item">
+          <img src="img/face.jpg" width="130" height="170" alt="Косметика для лица">
+          <p class="cosmetic-kinds__ddescription"> Уход для лица</p>
+          <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 6H23M23 6L17.4242 1M23 6L17.4242 11" stroke="#122947"/>
+            </svg>
+        </div>
+        <div class="cosmetic-kinds__item">
+          <img src="img/body.jpg" width="130" height="170" alt="Косметика для тела">
+          <p class="cosmetic-kinds__ddescription"> Уход для тел</p>
+          <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 6H23M23 6L17.4242 1M23 6L17.4242 11" stroke="#122947"/>
+            </svg>
+        </div>
+      </div>
+      </div>
+
+
+
+   </section>
+  </main>
   </body>
 </html>
