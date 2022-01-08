@@ -16,7 +16,7 @@
        -->
        <svg class="logo"><use xlink:href="img/sprite.svg#maroon"></use> </svg>
       </a>
-     <nav class="main-nav main-nav--closed main-nav--nojs">  <!-- если будем делать работу при неподключенном js -->
+     <nav class="main-nav main-nav_closed main-nav_nojs">  <!-- если будем делать работу при неподключенном js -->
       <div class="main-nav__toogle">
         <span class="visually-hidden"> Открыть меню </span>
       </div>
@@ -34,13 +34,13 @@
         </ul>
         <div class="social">
           <a class="social__link" href="https://www.facebook.com" target="blank">
-            <svg class="social__link social__link--facebook"><use xlink:href="img/sprite.svg#facebook"></use> </svg>
+            <svg class="social__link social__link_facebook"><use xlink:href="img/sprite.svg#facebook"></use> </svg>
           </a>
           <a class="social__link" href="https://www.instagram.com" target="blank">
-            <svg class="social__link social__link--instagram"><use xlink:href="img/sprite.svg#instagram"></use> </svg>
+            <svg class="social__link social__link_instagram"><use xlink:href="img/sprite.svg#instagram"></use> </svg>
           </a>
           <a class="social__link" href="https://www.twitter.com" target="blank">
-            <svg class="social__link social__link--twitter"><use xlink:href="img/sprite.svg#twitter"></use> </svg>
+            <svg class="social__link social__link_twitter"><use xlink:href="img/sprite.svg#twitter"></use> </svg>
           </a>
         </div>
         <div class="main-nav__private">
@@ -54,36 +54,141 @@
       </div>
      </nav>
    </header>
-   <main class="page_main">
+   <main class="page-main">
     <h1 class="visually-hidden">Интернет магазин косметики</h1>
-    <section class="main_division">
+    <section class="main-division">
       <div class="offer">
         <div class="slogan">
         <h2><svg class="logo"><use xlink:href="img/sprite.svg#maroon"></use> </svg></h2>
-        <h3>Натуральная косметика<br> для бережного ухода за кожей</h3>
+        <h3 class="description">Натуральная косметика<br> для бережного ухода за кожей</h3>
         <a class="button" href="#" >Подробнее</a>
       </div>
       <div class="cosmetic-kinds">
         <div class="cosmetic-kinds__item">
           <img src="img/face.jpg" width="130" height="170" alt="Косметика для лица">
-          <p class="cosmetic-kinds__ddescription"> Уход для лица</p>
+          <p class="cosmetic-kinds__description"> Уход для лица</p>
           <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 6H23M23 6L17.4242 1M23 6L17.4242 11" stroke="#122947"/>
             </svg>
         </div>
         <div class="cosmetic-kinds__item">
           <img src="img/body.jpg" width="130" height="170" alt="Косметика для тела">
-          <p class="cosmetic-kinds__ddescription"> Уход для тел</p>
+          <p class="cosmetic-kinds__description"> Уход для тела</p>
           <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 6H23M23 6L17.4242 1M23 6L17.4242 11" stroke="#122947"/>
             </svg>
         </div>
       </div>
       </div>
-
-
-
+      <div class="bestseller">
+        <h2 class="title">Бестселлеры</h2>
+        <p class="description">Легендарные продукты,завоевавшие любовь наших клиентов</p>
+        <a class="button" href="#" target="_blank">Смотреть все</a>
+        <!--нужно сделать карусель по свайпу в бок-->
+        <div class="bestseller__card bestseller__card_high">
+          <h3 class="bestseller__card-title">High </h3>
+          <p class="bestseller__card-discription">крем для лица</p>
+          <a class="bestseller__button" href="#" target="_blank"> Подробнее</a>
+        </div>
+        <div class="bestseller__card bestseller__card_rest">
+          <h3 class="bestseller__card-title">Rest </h3>
+          <p class="bestseller__card-discription">минеральная пудра</p>
+          <a class="bestseller__button" href="#" target="_blank"> Подробнее</a>
+        </div>
+        <div class="bestseller__card bestseller__card_rose">
+          <h3 class="bestseller__card-title">Rose </h3>
+          <p class="bestseller__card-discription">крем для лица</p>
+          <a class="bestseller__button" href="#" target="_blank"> Подробнее</a>
+        </div>
+        <div class="bestseller__card bestseller__card_milk">
+          <h3 class="bestseller__card-title">Milk </h3>
+          <p class="bestseller__card-discription">масло для тела</p>
+          <a class="bestseller__button" href="#" target="_blank"> Подробнее</a>
+        </div>
+        <div class="bestseller__card bestseller__card_paradaise">
+          <h3 class="bestseller__card-title">Paradaise</h3>
+          <p class="bestseller__card-discription">минеральная пудра</p>
+          <a class="bestseller__button" href="#" target="_blank"> Подробнее</a>
+        </div>
+      </div>
+      <div class="new-collection">
+        <h3 class="title">Встречайте весну вместе с нами</h3>
+        <p class="discription">Попробуйте новую коллекцию ухаживающих средств для лица с SPF защитой</p>
+        <a class="button" href="#" target="_blank"> Подробнее </a>
+      </div>
+      <div class="profile">
+        <!--нужно сделать заголовки и описания одним классом -->
+        <h3 class="title">Индивидуальный уход</h3>
+        <p class="description">Заполните анкету, и мы подберем уход, подходящий именно вам, учитывая ваш образ жизни, место жительства и другие факторы. </p>
+        <button class="button">Заполнить анкету</button>
+        <!--обязательон использовать srcset для загрузки корректных изображений под разные разрешения-->
+        <img src="img/profile.jpg" width="250" height="252" alt="косметика">
+      </div>
+      <div class="history">
+        <h3 class="history__title">“Мы стремимся сделать уход за кожей доступным и приятным ритуалом для всех, кто хочет заботиться о себе и своем теле”</h3>
+        <button class=" button"> Наша история </button>
+      </div>
+      <div class="subscription">
+      <h3 class="title">Присоединяйтесь к нам</h3>
+      <p class="description">Подпишитесь на наш аккаунт @marooncare и узнавайте о новиках и акциях первыми</p>
+      <button class=" button"> Подписаться </button>
+      <img src="img/subscriptione.jpg" width="290" height="290" alt="подписка">
+      </div>
+      <div class="contact">
+        <h3 class="title">Контакты</h3>
+        <h4 class=" contact__label">Адрес</h4>
+        <p class="contact__street">Санкт-Петербург, ул. Большая Конюшенная, 19</p>
+        <h4 class="contact__label"> Телефон</h4>
+        <a href="tel:+79238889060">+7 (923) 888-90-60</a>
+        <h4 class="contact__label">E-mail</h4>
+        <a class="mailto:info@maroon.ru">info@maroon.ru</a>
+        <div class="social">
+          <a class="social__link" href="https://www.facebook.com" target="blank">
+            <svg class="social__link social__link_facebook"><use xlink:href="img/sprite.svg#facebook"></use> </svg>
+          </a>
+          <a class="social__link" href="https://www.instagram.com" target="blank">
+            <svg class="social__link social__link_instagram"><use xlink:href="img/sprite.svg#instagram"></use> </svg>
+          </a>
+          <a class="social__link" href="https://www.twitter.com" target="blank">
+            <svg class="social__link social__link_twitter"><use xlink:href="img/sprite.svg#twitter"></use> </svg>
+          </a>
+        </div>
+        <img class="contact__map" src="img/map.jpg" width="290" height="281">
+      </div>
    </section>
   </main>
+  <footer class="footer">
+    <svg class="logo"><use xlink:href="img/sprite.svg#maroon"></use> </svg>
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a class="footer__link" href="#"> Каталог </a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#"> Магазины </a>
+      </li>
+      <li class=" footer__item">
+        <a class="footer__link" href="#"> О нас </a>
+      </li>
+      <li class=" footer__item">
+        <a class="footer__link" href="#"> Контакты </a>
+      </li>
+    </ul>
+    <div class="social">
+      <a class="social__link" href="https://www.facebook.com" target="blank">
+        <svg class="social__link social__link_facebook"><use xlink:href="img/sprite.svg#facebook"></use> </svg>
+      </a>
+      <a class="social__link" href="https://www.instagram.com" target="blank">
+        <svg class="social__link social__link_instagram"><use xlink:href="img/sprite.svg#instagram"></use> </svg>
+      </a>
+      <a class="social__link" href="https://www.twitter.com" target="blank">
+        <svg class="social__link social__link_twitter"><use xlink:href="img/sprite.svg#twitter"></use> </svg>
+      </a>
+    </div>
+  <div class="copyright">
+    <!--Нужно сделать чтобы дата автоматически менялась-->
+    <p class="copyright__text">Maroon &#169 2020 Все права защищены</p>
+    <a class="copyright__privacy" href="#">Политика конфиденциальности</a>
+  </div>
+  </footer>
   </body>
 </html>
